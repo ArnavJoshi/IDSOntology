@@ -1,0 +1,539 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY Ebiquity "http://www.semanticweb.org/Ebiquity/" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY vulnerabilitiesTCP "http://www.semanticweb.org/Ebiquity/vulnerabilitiesTCP/" >
+    <!ENTITY NVDOntology "http://www.semanticweb.org/Ebiquity/ontologies/NVDOntology.owl#" >
+    <!ENTITY TCP "http://www.semanticweb.org/ArnavJoshi/ontologies/2012/9/NVDOntology.owl#TCP/" >
+    <!ENTITY Vulnerability_S "http://www.semanticweb.org/ArnavJoshi/ontologies/2012/9/NVDOntology.owl#Vulnerability_S/" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ArnavJoshi/ontologies/2012/9/NVDOntology.owl#"
+     xml:base="http://www.semanticweb.org/ArnavJoshi/ontologies/2012/9/NVDOntology.owl"
+     xmlns:TCP="http://www.semanticweb.org/ArnavJoshi/ontologies/2012/9/NVDOntology.owl#TCP/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:Ebiquity="http://www.semanticweb.org/Ebiquity/"
+     xmlns:NVDOntology="&Ebiquity;ontologies/NVDOntology.owl#"
+     xmlns:vulnerabilitiesTCP="&Ebiquity;vulnerabilitiesTCP/"
+     xmlns:Vulnerability_S="http://www.semanticweb.org/ArnavJoshi/ontologies/2012/9/NVDOntology.owl#Vulnerability_S/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <owl:Ontology rdf:about="&Ebiquity;ontologies/NVDOntology.owl">
+        <owl:versionIRI rdf:resource="&Ebiquity;ontologies/NVDOntology_0.1.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/Major_version -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;Major_version">
+        <rdfs:domain rdf:resource="&Ebiquity;Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/Minor_Version -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;Minor_Version">
+        <rdfs:subPropertyOf rdf:resource="&Ebiquity;Major_version"/>
+        <rdfs:domain rdf:resource="&Ebiquity;Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/affectsProduct -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;affectsProduct">
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ebiquity;affectsProduct"/>
+                <owl:onClass rdf:resource="&Ebiquity;Product"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ebiquity;affectsProduct"/>
+                <owl:onClass rdf:resource="&Ebiquity;Vulnerability"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/hasCPEName -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;hasCPEName">
+        <rdfs:domain rdf:resource="&Ebiquity;Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/hasCVEId -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;hasCVEId">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&Ebiquity;Vulnerability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/hasModifiedDate -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;hasModifiedDate">
+        <rdfs:domain rdf:resource="&Ebiquity;Vulnerability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/hasName -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;hasName">
+        <rdfs:domain rdf:resource="&Ebiquity;Vulnerability_Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/hasProductCategory -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;hasProductCategory">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ebiquity;hasProductCategory"/>
+                <owl:onClass rdf:resource="&Ebiquity;Product"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/hasPublishedDate -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;hasPublishedDate">
+        <rdfs:domain rdf:resource="&Ebiquity;Vulnerability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/hasReference -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;hasReference">
+        <rdfs:domain rdf:resource="&Ebiquity;Vulnerability_Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/hasReferenceType -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;hasReferenceType">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ebiquity;hasReferenceType"/>
+                <owl:onClass rdf:resource="&Ebiquity;Vulnerability_Source"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/hasSecurityProtectionType -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;hasSecurityProtectionType">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ebiquity;hasSecurityProtectionType"/>
+                <owl:onClass rdf:resource="&Ebiquity;Vulnerability"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/hasSeverity -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;hasSeverity">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ebiquity;hasSeverity"/>
+                <owl:onClass rdf:resource="&Ebiquity;Vulnerability"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/hasSourceId -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;hasSourceId">
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ebiquity;hasSourceId"/>
+                <owl:allValuesFrom rdf:resource="&Ebiquity;Vulnerability"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ebiquity;hasSourceId"/>
+                <owl:allValuesFrom rdf:resource="&Ebiquity;Vulnerability"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/hasSummary -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;hasSummary">
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ebiquity;hasSummary"/>
+                <owl:allValuesFrom rdf:resource="&Ebiquity;Vulnerability"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ebiquity;hasSummary"/>
+                <owl:allValuesFrom rdf:resource="&Ebiquity;Vulnerability"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/hasVulnerability -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;hasVulnerability">
+        <owl:inverseOf rdf:resource="&Ebiquity;affectsProduct"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ebiquity;hasVulnerability"/>
+                <owl:someValuesFrom rdf:resource="&Ebiquity;Product"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ebiquity;hasVulnerability"/>
+                <owl:someValuesFrom rdf:resource="&Ebiquity;Vulnerability"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/hasVulnerableConfigID -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;hasVulnerableConfigID">
+        <rdfs:domain rdf:resource="&Ebiquity;Product"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/producedBy -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;producedBy">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ebiquity;producedBy"/>
+                <owl:someValuesFrom rdf:resource="&Ebiquity;Product"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ebiquity;producedBy"/>
+                <owl:onClass rdf:resource="&Ebiquity;Vendor"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/vulnerabilitieshasAccessVector -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;vulnerabilitieshasAccessVector">
+        <rdfs:subPropertyOf rdf:resource="&Ebiquity;hasSeverity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/vulnerabilitieshasAuthentication -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;vulnerabilitieshasAuthentication">
+        <rdfs:subPropertyOf rdf:resource="&Ebiquity;hasSeverity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/vulnerabilitieshasAvailabilityImpact -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;vulnerabilitieshasAvailabilityImpact">
+        <rdfs:subPropertyOf rdf:resource="&Ebiquity;hasSeverity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/vulnerabilitieshasComplexity -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;vulnerabilitieshasComplexity">
+        <rdfs:subPropertyOf rdf:resource="&Ebiquity;hasSeverity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/vulnerabilitieshasIntegrityImpact -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;vulnerabilitieshasIntegrityImpact">
+        <rdfs:subPropertyOf rdf:resource="&Ebiquity;hasSeverity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/ontologies/NVDOntology.owl#generatedDateTime -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;ontologies/NVDOntology.owl#generatedDateTime">
+        <rdfs:subPropertyOf rdf:resource="&Ebiquity;hasSeverity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/ontologies/NVDOntology.owl#hasCVSSSource -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;ontologies/NVDOntology.owl#hasCVSSSource">
+        <rdfs:subPropertyOf rdf:resource="&Ebiquity;hasSeverity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/ontologies/NVDOntology.owl#hasConfidentialityImpact -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;ontologies/NVDOntology.owl#hasConfidentialityImpact">
+        <rdfs:subPropertyOf rdf:resource="&Ebiquity;hasSeverity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/ontologies/NVDOntology.owl#hasScore -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;ontologies/NVDOntology.owl#hasScore">
+        <rdfs:subPropertyOf rdf:resource="&Ebiquity;hasSeverity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/ontologies/NVDOntology.owl#hasVulnerabilitySources -->
+
+    <owl:ObjectProperty rdf:about="&Ebiquity;ontologies/NVDOntology.owl#hasVulnerabilitySources">
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ebiquity;ontologies/NVDOntology.owl#hasVulnerabilitySources"/>
+                <owl:onClass rdf:resource="&Ebiquity;Vulnerability_Source"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ebiquity;ontologies/NVDOntology.owl#hasVulnerabilitySources"/>
+                <owl:onClass rdf:resource="&Ebiquity;Vulnerability"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/vulnerabilitiesdateValue -->
+
+    <owl:DatatypeProperty rdf:about="&Ebiquity;vulnerabilitiesdateValue">
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Ebiquity;hasModifiedDate"/>
+                <owl:someValuesFrom rdf:resource="&Ebiquity;Vulnerability"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/Application -->
+
+    <owl:Class rdf:about="&Ebiquity;Application">
+        <rdfs:subClassOf rdf:resource="&Ebiquity;Software"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/CONFIRM -->
+
+    <owl:Class rdf:about="&Ebiquity;CONFIRM">
+        <rdfs:subClassOf rdf:resource="&Ebiquity;Vulnerability_Source"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/Hardware -->
+
+    <owl:Class rdf:about="&Ebiquity;Hardware">
+        <rdfs:subClassOf rdf:resource="&Ebiquity;Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/Linux_Distribution -->
+
+    <owl:Class rdf:about="&Ebiquity;Linux_Distribution">
+        <rdfs:subClassOf rdf:resource="&Ebiquity;Vulnerability_Source"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/Misc -->
+
+    <owl:Class rdf:about="&Ebiquity;Misc">
+        <rdfs:subClassOf rdf:resource="&Ebiquity;Vulnerability_Source"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/Online_Security_Source -->
+
+    <owl:Class rdf:about="&Ebiquity;Online_Security_Source">
+        <rdfs:subClassOf rdf:resource="&Ebiquity;Vulnerability_Source"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/Operating_System -->
+
+    <owl:Class rdf:about="&Ebiquity;Operating_System">
+        <rdfs:subClassOf rdf:resource="&Ebiquity;Software"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/Product -->
+
+    <owl:Class rdf:about="&Ebiquity;Product"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/Router -->
+
+    <owl:Class rdf:about="&Ebiquity;Router">
+        <rdfs:subClassOf rdf:resource="&Ebiquity;Hardware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/Software -->
+
+    <owl:Class rdf:about="&Ebiquity;Software">
+        <rdfs:subClassOf rdf:resource="&Ebiquity;Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/Switch -->
+
+    <owl:Class rdf:about="&Ebiquity;Switch">
+        <rdfs:subClassOf rdf:resource="&Ebiquity;Hardware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/Vendor -->
+
+    <owl:Class rdf:about="&Ebiquity;Vendor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/Vulnerability -->
+
+    <owl:Class rdf:about="&Ebiquity;Vulnerability"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/Vulnerability_Source -->
+
+    <owl:Class rdf:about="&Ebiquity;Vulnerability_Source">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/vulnerabilitiesWeb_Browser -->
+
+    <owl:Class rdf:about="&Ebiquity;vulnerabilitiesWeb_Browser">
+        <rdfs:subClassOf rdf:resource="&Ebiquity;Application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Ebiquity/vulnerabilitiesTCP/IP_device -->
+
+    <owl:Class rdf:about="&Ebiquity;vulnerabilitiesTCP/IP_device">
+        <rdfs:subClassOf rdf:resource="&Ebiquity;Hardware"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
