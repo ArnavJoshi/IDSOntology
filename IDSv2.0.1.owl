@@ -17,7 +17,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      ontologyIRI="http://www.semanticweb.org/ontologies/2012/4/Ontology1337020662854.owl">
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/2012/4/Ontology1337020662854.owl#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
@@ -109,7 +109,13 @@
         <Class IRI="#NetFlood"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#NetworkTerms"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#OperatingSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherTechnicalTerms"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ParisiticCode"/>
@@ -735,8 +741,8 @@
         <Class IRI="#Probe"/>
     </SubClassOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#isResultOf"/>
         <ObjectProperty IRI="#resultsIn"/>
+        <ObjectProperty IRI="#isResultOf"/>
     </InverseObjectProperties>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="#connectedTo"/>
