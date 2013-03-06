@@ -6,21 +6,25 @@
     <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-]>
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.semanticweb.org/ontologies/2012/4/Ontology1337020662854.owl"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      ontologyIRI="http://www.semanticweb.org/ontologies/2012/4/Ontology1337020662854.owl">
+
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+
+    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/2012/4/Ontology1337020662854.owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Declaration>
         <Class IRI="#AtError"/>
     </Declaration>
@@ -79,6 +83,9 @@
         <Class IRI="#InputValidationError"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#KernelModule"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Logic"/>
     </Declaration>
     <Declaration>
@@ -109,7 +116,10 @@
         <Class IRI="#NetFlood"/>
     </Declaration>
     <Declaration>
+
         <Class IRI="#NetworkTerms"/>
+
+        <Class IRI="#NetworkDataUsage"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OperatingSystem"/>
@@ -244,6 +254,9 @@
         <ObjectProperty IRI="#resultsIn"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#anomolousDataOutFlow"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#chgGid"/>
     </Declaration>
     <Declaration>
@@ -334,7 +347,16 @@
         <DataProperty IRI="#hasVulnerabilityTerm"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#isNew"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#lastModifiedDateTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#newDestIP"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#newPortsOpened"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#numChildProcesses"/>
@@ -359,6 +381,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#selfDist"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#showsInfectionSigns"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#summary"/>
@@ -858,6 +883,10 @@
         <DataProperty IRI="#hasProcessName"/>
     </FunctionalDataProperty>
     <DataPropertyDomain>
+        <DataProperty IRI="#anomolousDataOutFlow"/>
+        <Class IRI="#NetworkDataUsage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#chgGid"/>
         <Class IRI="#Process"/>
     </DataPropertyDomain>
@@ -977,8 +1006,24 @@
         <Class IRI="#WebText"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#isNew"/>
+        <Class IRI="#Hardware"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isNew"/>
+        <Class IRI="#KernelModule"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#lastModifiedDateTime"/>
         <Class IRI="#Vulnerability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#newDestIP"/>
+        <Class IRI="#NetworkDataUsage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#newPortsOpened"/>
+        <Class IRI="#NetworkDataUsage"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#numChildProcesses"/>
@@ -1013,6 +1058,10 @@
         <Class IRI="#Process"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#showsInfectionSigns"/>
+        <Class IRI="#Process"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#summary"/>
         <Class IRI="#Vulnerability"/>
     </DataPropertyDomain>
@@ -1024,6 +1073,10 @@
         <DataProperty IRI="#vulnSource"/>
         <Class IRI="#VulnerabilitySource"/>
     </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#anomolousDataOutFlow"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#chgGid"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
@@ -1101,8 +1154,20 @@
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#isNew"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#lastModifiedDateTime"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#newDestIP"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#newPortsOpened"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#numChildProcesses"/>
@@ -1137,6 +1202,10 @@
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#showsInfectionSigns"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#summary"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -1149,8 +1218,4 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
 </Ontology>
-
-
-
-<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
 
