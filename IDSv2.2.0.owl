@@ -11,1238 +11,1379 @@
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://ebiquity.umbc.edu/ontologies/cybersecurity/ids/v2.2/IDSOntology.owl"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      ontologyIRI="http://ebiquity.umbc.edu/ontologies/cybersecurity/ids/v2.2/IDSOntology.owl"
      versionIRI="http://ebiquity.umbc.edu/ontologies/cybersecurity/ids/v2.2/IDSv2.2.0.owl">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#AtError"/>
+        <Class IRI="#AtError"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#AttackProperties"/>
+        <Class IRI="#AttackProperties"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Backdoor"/>
+        <Class IRI="#Backdoor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#BotnetAttack"/>
+        <Class IRI="#BotnetAttack"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#BoundaryCondition"/>
+        <Class IRI="#BoundaryCondition"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#BufferOverFlow"/>
+        <Class IRI="#BufferOverFlow"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#ConfigurationError"/>
+        <Class IRI="#ConfigurationError"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Consequence"/>
+        <Class IRI="#Consequence"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#DataCorruption"/>
+        <Class IRI="#DataCorruption"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#DenialOfService"/>
+        <Class IRI="#DenialOfService"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#DirectoryExposure"/>
+        <Class IRI="#DirectoryExposure"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#DistributedCode"/>
+        <Class IRI="#DistributedCode"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#ExICMPEchoReq"/>
+        <Class IRI="#ExICMPEchoReq"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#ExIPPacketSize"/>
+        <Class IRI="#ExIPPacketSize"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#ExceptionCondition"/>
+        <Class IRI="#ExceptionCondition"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#ExcessForks"/>
+        <Class IRI="#ExcessForks"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#FileName"/>
+        <Class IRI="#FileName"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Hardware"/>
+        <Class IRI="#Hardware"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#IPAddress"/>
+        <Class IRI="#IPAddress"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#IPFrag"/>
+        <Class IRI="#IPFrag"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#InputValidationError"/>
+        <Class IRI="#InputValidationError"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#KernelModule"/>
+        <Class IRI="#KernelModule"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Logic"/>
+        <Class IRI="#Logic"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#LogicExploit"/>
+        <Class IRI="#LogicExploit"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#LossOfConf"/>
+        <Class IRI="#LossOfConf"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#LossOfIntegrity"/>
+        <Class IRI="#LossOfIntegrity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#MalformedInput"/>
+        <Class IRI="#MalformedInput"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#MaliciousCodeExecution"/>
+        <Class IRI="#MaliciousCodeExecution"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Means"/>
+        <Class IRI="#Means"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#MemoryConsumption"/>
+        <Class IRI="#MemoryConsumption"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#MitnickAttack"/>
+        <Class IRI="#MitnickAttack"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#NetFlood"/>
+        <Class IRI="#NetFlood"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#NetworkDataUsage"/>
+        <Class IRI="#NetworkDataUsage"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#OperatingSystem"/>
+        <Class IRI="#OperatingSystem"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#OtherTechnicalTerms"/>
+        <Class IRI="#OtherTechnicalTerms"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#ParisiticCode"/>
+        <Class IRI="#ParisiticCode"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#PingOfDeath"/>
+        <Class IRI="#PingOfDeath"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#PingScan"/>
+        <Class IRI="#PingScan"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#PrivilegeEsc"/>
+        <Class IRI="#PrivilegeEsc"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Probe"/>
+        <Class IRI="#Probe"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Process"/>
+        <Class IRI="#Process"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Product"/>
+        <Class IRI="#Product"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#RSTProbe"/>
+        <Class IRI="#RSTProbe"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#RaceCondition"/>
+        <Class IRI="#RaceCondition"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#RemoteAccess"/>
+        <Class IRI="#RemoteAccess"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Rootkit"/>
+        <Class IRI="#Rootkit"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#SelfPropagatingCode"/>
+        <Class IRI="#SelfPropagatingCode"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#SerialError"/>
+        <Class IRI="#SerialError"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Software"/>
+        <Class IRI="#Software"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#SynFlood"/>
+        <Class IRI="#SynFlood"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#SynScan"/>
+        <Class IRI="#SynScan"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#SysCrash"/>
+        <Class IRI="#SysCrash"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#System"/>
+        <Class IRI="#System"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#TCPConnect"/>
+        <Class IRI="#TCPConnect"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#TCPPortScan"/>
+        <Class IRI="#TCPPortScan"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Time"/>
+        <Class IRI="#Time"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#TriggeredCode"/>
+        <Class IRI="#TriggeredCode"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Trojans"/>
+        <Class IRI="#Trojans"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#UnauthRoot"/>
+        <Class IRI="#UnauthRoot"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#UnauthUser"/>
+        <Class IRI="#UnauthUser"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#UserEnumeration"/>
+        <Class IRI="#UserEnumeration"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Vendor"/>
+        <Class IRI="#Vendor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Virus"/>
+        <Class IRI="#Virus"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Vulnerability"/>
+        <Class IRI="#Vulnerability"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#VulnerabilitySource"/>
+        <Class IRI="#VulnerabilitySource"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Weakness"/>
+        <Class IRI="#Weakness"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#WebBrowser"/>
+        <Class IRI="#WebBrowser"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#WebText"/>
+        <Class IRI="#WebText"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Worm"/>
+        <Class IRI="#Worm"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#rstProbe"/>
+        <Class IRI="#rstProbe"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#affectsProduct"/>
+        <ObjectProperty IRI="#affectsProduct"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#connectedTo"/>
+        <ObjectProperty IRI="#connectedTo"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasVulnerability"/>
+        <ObjectProperty IRI="#hasVulnerability"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasVulnerabilitySources"/>
+        <ObjectProperty IRI="#hasVulnerabilitySources"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#isResultOf"/>
+        <ObjectProperty IRI="#isResultOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#isUnderAttack"/>
+        <ObjectProperty IRI="#isUnderAttack"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
+        <ObjectProperty IRI="#resultsIn"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#anomolousDataOutFlow"/>
+        <DataProperty IRI="#anomolousDataOutFlow"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#chgGid"/>
+        <DataProperty IRI="#chgGid"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#chgPPid"/>
+        <DataProperty IRI="#chgPPid"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#chgSUid"/>
+        <DataProperty IRI="#chgSUid"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#chgUid"/>
+        <DataProperty IRI="#chgUid"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#commonConsequences"/>
+        <DataProperty IRI="#commonConsequences"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#cveID"/>
+        <DataProperty IRI="#cveID"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#cweID"/>
+        <DataProperty IRI="#cweID"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#dataSize"/>
+        <DataProperty IRI="#dataSize"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#description"/>
+        <DataProperty IRI="#description"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#generated-on-datetime"/>
+        <DataProperty IRI="#generated-on-datetime"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasAccessComplexity"/>
+        <DataProperty IRI="#hasAccessComplexity"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasAccessVector"/>
+        <DataProperty IRI="#hasAccessVector"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasAuthentication"/>
+        <DataProperty IRI="#hasAuthentication"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasAvailabilityImpact"/>
+        <DataProperty IRI="#hasAvailabilityImpact"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasBeenSeenBefore"/>
+        <DataProperty IRI="#hasBeenSeenBefore"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasCodeSize"/>
+        <DataProperty IRI="#hasCodeSize"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasConfidentialityImpact"/>
+        <DataProperty IRI="#hasConfidentialityImpact"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasDataSize"/>
+        <DataProperty IRI="#hasDataSize"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasIPAddress"/>
+        <DataProperty IRI="#hasIPAddress"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasInstalledProduct"/>
+        <DataProperty IRI="#hasInstalledProduct"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasIntegrityImpact"/>
+        <DataProperty IRI="#hasIntegrityImpact"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasLibSize"/>
+        <DataProperty IRI="#hasLibSize"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasMACAddress"/>
+        <DataProperty IRI="#hasMACAddress"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasProcessName"/>
+        <DataProperty IRI="#hasProcessName"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasReference"/>
+        <DataProperty IRI="#hasReference"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasReferenceType"/>
+        <DataProperty IRI="#hasReferenceType"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasSecurityExploit"/>
+        <DataProperty IRI="#hasSecurityExploit"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasSeverityScore"/>
+        <DataProperty IRI="#hasSeverityScore"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasSource"/>
+        <DataProperty IRI="#hasSource"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasSourceID"/>
+        <DataProperty IRI="#hasSourceID"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasVulnerabilityTerm"/>
+        <DataProperty IRI="#hasVulnerabilityTerm"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#isNew"/>
+        <DataProperty IRI="#isNew"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#lastModifiedDateTime"/>
+        <DataProperty IRI="#lastModifiedDateTime"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#newDestIP"/>
+        <DataProperty IRI="#newDestIP"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#newPortsOpened"/>
+        <DataProperty IRI="#newPortsOpened"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#numChildProcesses"/>
+        <DataProperty IRI="#numChildProcesses"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#numOpenFiles"/>
+        <DataProperty IRI="#numOpenFiles"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#numProcessesRunning"/>
+        <DataProperty IRI="#numProcessesRunning"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#opensPort"/>
+        <DataProperty IRI="#opensPort"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#potentialMitigations"/>
+        <DataProperty IRI="#potentialMitigations"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#publishedDateTime"/>
+        <DataProperty IRI="#publishedDateTime"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#score"/>
+        <DataProperty IRI="#score"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#selfDist"/>
+        <DataProperty IRI="#selfDist"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#showsInfectionSigns"/>
+        <DataProperty IRI="#showsInfectionSigns"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#summary"/>
+        <DataProperty IRI="#summary"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#timeOfIntroduction"/>
+        <DataProperty IRI="#timeOfIntroduction"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#vulnSource"/>
+        <DataProperty IRI="#vulnSource"/>
     </Declaration>
     <EquivalentClasses>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#RemoteAccess"/>
+        <Class IRI="#RemoteAccess"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-            <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#PrivilegeEsc"/>
+            <ObjectProperty IRI="#resultsIn"/>
+            <Class IRI="#PrivilegeEsc"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#AtError"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#LogicExploit"/>
+        <Class IRI="#AtError"/>
+        <Class IRI="#LogicExploit"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Backdoor"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#MaliciousCodeExecution"/>
+        <Class IRI="#Backdoor"/>
+        <Class IRI="#MaliciousCodeExecution"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Backdoor"/>
+        <Class IRI="#Backdoor"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-            <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#RemoteAccess"/>
+            <ObjectProperty IRI="#resultsIn"/>
+            <Class IRI="#RemoteAccess"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#BotnetAttack"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Consequence"/>
+        <Class IRI="#BotnetAttack"/>
+        <Class IRI="#Consequence"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#BoundaryCondition"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#InputValidationError"/>
+        <Class IRI="#BoundaryCondition"/>
+        <Class IRI="#InputValidationError"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#BufferOverFlow"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Means"/>
+        <Class IRI="#BufferOverFlow"/>
+        <Class IRI="#Means"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#BufferOverFlow"/>
+        <Class IRI="#BufferOverFlow"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-            <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#DenialOfService"/>
+            <ObjectProperty IRI="#resultsIn"/>
+            <Class IRI="#DenialOfService"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#ConfigurationError"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Means"/>
+        <Class IRI="#ConfigurationError"/>
+        <Class IRI="#Means"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#ConfigurationError"/>
+        <Class IRI="#ConfigurationError"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-            <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#DenialOfService"/>
+            <ObjectProperty IRI="#resultsIn"/>
+            <Class IRI="#DenialOfService"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Consequence"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#AttackProperties"/>
+        <Class IRI="#Consequence"/>
+        <Class IRI="#AttackProperties"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#DataCorruption"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#LossOfIntegrity"/>
+        <Class IRI="#DataCorruption"/>
+        <Class IRI="#LossOfIntegrity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#DenialOfService"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Consequence"/>
+        <Class IRI="#DenialOfService"/>
+        <Class IRI="#Consequence"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#DirectoryExposure"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#LossOfConf"/>
+        <Class IRI="#DirectoryExposure"/>
+        <Class IRI="#LossOfConf"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#DistributedCode"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#MaliciousCodeExecution"/>
+        <Class IRI="#DistributedCode"/>
+        <Class IRI="#MaliciousCodeExecution"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#DistributedCode"/>
+        <Class IRI="#DistributedCode"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-            <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#BotnetAttack"/>
+            <ObjectProperty IRI="#resultsIn"/>
+            <Class IRI="#BotnetAttack"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#ExICMPEchoReq"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Means"/>
+        <Class IRI="#ExICMPEchoReq"/>
+        <Class IRI="#Means"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#ExIPPacketSize"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Means"/>
+        <Class IRI="#ExIPPacketSize"/>
+        <Class IRI="#Means"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#ExceptionCondition"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#LogicExploit"/>
+        <Class IRI="#ExceptionCondition"/>
+        <Class IRI="#LogicExploit"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#ExcessForks"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#DenialOfService"/>
+        <Class IRI="#ExcessForks"/>
+        <Class IRI="#DenialOfService"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Hardware"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Product"/>
+        <Class IRI="#Hardware"/>
+        <Class IRI="#Product"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#IPFrag"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Means"/>
+        <Class IRI="#IPFrag"/>
+        <Class IRI="#Means"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#IPFrag"/>
+        <Class IRI="#IPFrag"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-            <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#DenialOfService"/>
+            <ObjectProperty IRI="#resultsIn"/>
+            <Class IRI="#DenialOfService"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#InputValidationError"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Means"/>
+        <Class IRI="#InputValidationError"/>
+        <Class IRI="#Means"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#InputValidationError"/>
+        <Class IRI="#InputValidationError"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-            <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#LossOfConf"/>
+            <ObjectProperty IRI="#resultsIn"/>
+            <Class IRI="#LossOfConf"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Logic"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#TriggeredCode"/>
+        <Class IRI="#Logic"/>
+        <Class IRI="#TriggeredCode"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#LogicExploit"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Logic"/>
+        <Class IRI="#LogicExploit"/>
+        <Class IRI="#Logic"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#LogicExploit"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Means"/>
+        <Class IRI="#LossOfConf"/>
+        <Class IRI="#Consequence"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#LossOfConf"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Consequence"/>
+        <Class IRI="#LossOfIntegrity"/>
+        <Class IRI="#Consequence"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#LossOfIntegrity"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Consequence"/>
+        <Class IRI="#MalformedInput"/>
+        <Class IRI="#InputValidationError"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#MalformedInput"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#InputValidationError"/>
+        <Class IRI="#MaliciousCodeExecution"/>
+        <Class IRI="#Means"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#MaliciousCodeExecution"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Means"/>
+        <Class IRI="#Means"/>
+        <Class IRI="#AttackProperties"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Means"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#AttackProperties"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Means"/>
+        <Class IRI="#Means"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-            <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Consequence"/>
+            <ObjectProperty IRI="#resultsIn"/>
+            <Class IRI="#Consequence"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#MemoryConsumption"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#DenialOfService"/>
+        <Class IRI="#MemoryConsumption"/>
+        <Class IRI="#DenialOfService"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#MitnickAttack"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Consequence"/>
+        <Class IRI="#MitnickAttack"/>
+        <Class IRI="#Consequence"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#NetFlood"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#DenialOfService"/>
+        <Class IRI="#NetFlood"/>
+        <Class IRI="#DenialOfService"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#OperatingSystem"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Software"/>
+        <Class IRI="#OperatingSystem"/>
+        <Class IRI="#Software"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#ParisiticCode"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#MaliciousCodeExecution"/>
+        <Class IRI="#ParisiticCode"/>
+        <Class IRI="#MaliciousCodeExecution"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#ParisiticCode"/>
+        <Class IRI="#ParisiticCode"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-            <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#LossOfIntegrity"/>
+            <ObjectProperty IRI="#resultsIn"/>
+            <Class IRI="#LossOfIntegrity"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#PingOfDeath"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#DenialOfService"/>
+        <Class IRI="#PingOfDeath"/>
+        <Class IRI="#DenialOfService"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#PingScan"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Probe"/>
+        <Class IRI="#PingScan"/>
+        <Class IRI="#Probe"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#PrivilegeEsc"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#LossOfConf"/>
+        <Class IRI="#PrivilegeEsc"/>
+        <Class IRI="#LossOfConf"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Probe"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Means"/>
+        <Class IRI="#Probe"/>
+        <Class IRI="#Means"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Probe"/>
+        <Class IRI="#Probe"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-            <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#DirectoryExposure"/>
+            <ObjectProperty IRI="#resultsIn"/>
+            <Class IRI="#DirectoryExposure"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Probe"/>
+        <Class IRI="#Probe"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-            <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#MitnickAttack"/>
+            <ObjectProperty IRI="#resultsIn"/>
+            <Class IRI="#MitnickAttack"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#RSTProbe"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Probe"/>
+        <Class IRI="#RSTProbe"/>
+        <Class IRI="#Probe"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#RaceCondition"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#LogicExploit"/>
+        <Class IRI="#RaceCondition"/>
+        <Class IRI="#LogicExploit"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#RemoteAccess"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Consequence"/>
+        <Class IRI="#RemoteAccess"/>
+        <Class IRI="#Consequence"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Rootkit"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#MaliciousCodeExecution"/>
+        <Class IRI="#Rootkit"/>
+        <Class IRI="#MaliciousCodeExecution"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Rootkit"/>
+        <Class IRI="#Rootkit"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-            <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#DenialOfService"/>
+            <ObjectProperty IRI="#resultsIn"/>
+            <Class IRI="#DenialOfService"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Rootkit"/>
+        <Class IRI="#Rootkit"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-            <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#LossOfConf"/>
+            <ObjectProperty IRI="#resultsIn"/>
+            <Class IRI="#LossOfConf"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#SelfPropagatingCode"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#MaliciousCodeExecution"/>
+        <Class IRI="#SelfPropagatingCode"/>
+        <Class IRI="#MaliciousCodeExecution"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#SelfPropagatingCode"/>
+        <Class IRI="#SelfPropagatingCode"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-            <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#LossOfConf"/>
+            <ObjectProperty IRI="#resultsIn"/>
+            <Class IRI="#LossOfConf"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#SerialError"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#LogicExploit"/>
+        <Class IRI="#SerialError"/>
+        <Class IRI="#LogicExploit"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Software"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Product"/>
+        <Class IRI="#Software"/>
+        <Class IRI="#Product"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#SynFlood"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Means"/>
+        <Class IRI="#SynFlood"/>
+        <Class IRI="#Means"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#SynFlood"/>
+        <Class IRI="#SynFlood"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-            <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#NetFlood"/>
+            <ObjectProperty IRI="#resultsIn"/>
+            <Class IRI="#NetFlood"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#SynScan"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Probe"/>
+        <Class IRI="#SynScan"/>
+        <Class IRI="#Probe"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#SysCrash"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#DenialOfService"/>
+        <Class IRI="#SysCrash"/>
+        <Class IRI="#DenialOfService"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#TCPConnect"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Probe"/>
+        <Class IRI="#TCPConnect"/>
+        <Class IRI="#Probe"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#TCPPortScan"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Probe"/>
+        <Class IRI="#TCPPortScan"/>
+        <Class IRI="#Probe"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#TCPPortScan"/>
+        <Class IRI="#TCPPortScan"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-            <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#DirectoryExposure"/>
+            <ObjectProperty IRI="#resultsIn"/>
+            <Class IRI="#DirectoryExposure"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Time"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#TriggeredCode"/>
+        <Class IRI="#Time"/>
+        <Class IRI="#TriggeredCode"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#TriggeredCode"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#MaliciousCodeExecution"/>
+        <Class IRI="#TriggeredCode"/>
+        <Class IRI="#MaliciousCodeExecution"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#TriggeredCode"/>
+        <Class IRI="#TriggeredCode"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-            <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#LossOfConf"/>
+            <ObjectProperty IRI="#resultsIn"/>
+            <Class IRI="#LossOfConf"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#TriggeredCode"/>
+        <Class IRI="#TriggeredCode"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-            <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#LossOfIntegrity"/>
+            <ObjectProperty IRI="#resultsIn"/>
+            <Class IRI="#LossOfIntegrity"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Trojans"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#MaliciousCodeExecution"/>
+        <Class IRI="#Trojans"/>
+        <Class IRI="#MaliciousCodeExecution"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Trojans"/>
+        <Class IRI="#Trojans"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-            <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#LossOfConf"/>
+            <ObjectProperty IRI="#resultsIn"/>
+            <Class IRI="#LossOfConf"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Trojans"/>
+        <Class IRI="#Trojans"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-            <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#RemoteAccess"/>
+            <ObjectProperty IRI="#resultsIn"/>
+            <Class IRI="#RemoteAccess"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#UnauthRoot"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#PrivilegeEsc"/>
+        <Class IRI="#UnauthRoot"/>
+        <Class IRI="#PrivilegeEsc"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#UnauthUser"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#PrivilegeEsc"/>
+        <Class IRI="#UnauthUser"/>
+        <Class IRI="#PrivilegeEsc"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#UserEnumeration"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Means"/>
+        <Class IRI="#UserEnumeration"/>
+        <Class IRI="#Means"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#UserEnumeration"/>
+        <Class IRI="#UserEnumeration"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-            <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#PrivilegeEsc"/>
+            <ObjectProperty IRI="#resultsIn"/>
+            <Class IRI="#PrivilegeEsc"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Vendor"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Product"/>
+        <Class IRI="#Vendor"/>
+        <Class IRI="#Product"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Virus"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#SelfPropagatingCode"/>
+        <Class IRI="#Virus"/>
+        <Class IRI="#SelfPropagatingCode"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#VulnerabilitySource"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Vulnerability"/>
+        <Class IRI="#VulnerabilitySource"/>
+        <Class IRI="#Vulnerability"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#WebBrowser"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Software"/>
+        <Class IRI="#WebBrowser"/>
+        <Class IRI="#Software"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Worm"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#SelfPropagatingCode"/>
+        <Class IRI="#Worm"/>
+        <Class IRI="#SelfPropagatingCode"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#rstProbe"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Probe"/>
+        <Class IRI="#rstProbe"/>
+        <Class IRI="#Probe"/>
     </SubClassOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#isResultOf"/>
+        <ObjectProperty IRI="#resultsIn"/>
+        <ObjectProperty IRI="#isResultOf"/>
     </InverseObjectProperties>
     <SymmetricObjectProperty>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#connectedTo"/>
+        <ObjectProperty IRI="#connectedTo"/>
     </SymmetricObjectProperty>
     <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#connectedTo"/>
+        <ObjectProperty IRI="#connectedTo"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#isResultOf"/>
+        <ObjectProperty IRI="#isResultOf"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#isUnderAttack"/>
+        <ObjectProperty IRI="#isUnderAttack"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
+        <ObjectProperty IRI="#resultsIn"/>
     </IrreflexiveObjectProperty>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#affectsProduct"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Vulnerability"/>
+        <ObjectProperty IRI="#affectsProduct"/>
+        <Class IRI="#Vulnerability"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#connectedTo"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#System"/>
+        <ObjectProperty IRI="#connectedTo"/>
+        <Class IRI="#System"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasVulnerability"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Product"/>
+        <ObjectProperty IRI="#hasVulnerability"/>
+        <Class IRI="#Product"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasVulnerabilitySources"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Vulnerability"/>
+        <ObjectProperty IRI="#hasVulnerabilitySources"/>
+        <Class IRI="#Vulnerability"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#isResultOf"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Consequence"/>
+        <ObjectProperty IRI="#isResultOf"/>
+        <Class IRI="#Consequence"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#isUnderAttack"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#System"/>
+        <ObjectProperty IRI="#isUnderAttack"/>
+        <Class IRI="#System"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Means"/>
+        <ObjectProperty IRI="#resultsIn"/>
+        <Class IRI="#Means"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#affectsProduct"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Product"/>
+        <ObjectProperty IRI="#affectsProduct"/>
+        <Class IRI="#Product"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#connectedTo"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#System"/>
+        <ObjectProperty IRI="#connectedTo"/>
+        <Class IRI="#System"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasVulnerability"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Vulnerability"/>
+        <ObjectProperty IRI="#hasVulnerability"/>
+        <Class IRI="#Vulnerability"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasVulnerabilitySources"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#VulnerabilitySource"/>
+        <ObjectProperty IRI="#hasVulnerabilitySources"/>
+        <Class IRI="#VulnerabilitySource"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#isResultOf"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Means"/>
+        <ObjectProperty IRI="#isResultOf"/>
+        <Class IRI="#Means"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#isUnderAttack"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Consequence"/>
+        <ObjectProperty IRI="#isUnderAttack"/>
+        <Class IRI="#Consequence"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#resultsIn"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Consequence"/>
+        <ObjectProperty IRI="#resultsIn"/>
+        <Class IRI="#Consequence"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#generated-on-datetime"/>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasSeverityScore"/>
+        <DataProperty IRI="#generated-on-datetime"/>
+        <DataProperty IRI="#hasSeverityScore"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasAccessComplexity"/>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasSeverityScore"/>
+        <DataProperty IRI="#hasAccessComplexity"/>
+        <DataProperty IRI="#hasSeverityScore"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasAccessVector"/>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasSeverityScore"/>
+        <DataProperty IRI="#hasAccessVector"/>
+        <DataProperty IRI="#hasSeverityScore"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasAuthentication"/>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasSeverityScore"/>
+        <DataProperty IRI="#hasAuthentication"/>
+        <DataProperty IRI="#hasSeverityScore"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasAvailabilityImpact"/>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasSeverityScore"/>
+        <DataProperty IRI="#hasAvailabilityImpact"/>
+        <DataProperty IRI="#hasSeverityScore"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasConfidentialityImpact"/>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasSeverityScore"/>
+        <DataProperty IRI="#hasConfidentialityImpact"/>
+        <DataProperty IRI="#hasSeverityScore"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasIntegrityImpact"/>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasSeverityScore"/>
+        <DataProperty IRI="#hasIntegrityImpact"/>
+        <DataProperty IRI="#hasSeverityScore"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasSource"/>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasSeverityScore"/>
+        <DataProperty IRI="#hasSource"/>
+        <DataProperty IRI="#hasSeverityScore"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#score"/>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasSeverityScore"/>
+        <DataProperty IRI="#score"/>
+        <DataProperty IRI="#hasSeverityScore"/>
     </SubDataPropertyOf>
     <FunctionalDataProperty>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasMACAddress"/>
+        <DataProperty IRI="#hasMACAddress"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasProcessName"/>
+        <DataProperty IRI="#hasProcessName"/>
     </FunctionalDataProperty>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#anomolousDataOutFlow"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#NetworkDataUsage"/>
+        <DataProperty IRI="#anomolousDataOutFlow"/>
+        <Class IRI="#NetworkDataUsage"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#chgGid"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Process"/>
+        <DataProperty IRI="#chgGid"/>
+        <Class IRI="#Process"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#chgPPid"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Process"/>
+        <DataProperty IRI="#chgPPid"/>
+        <Class IRI="#Process"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#chgSUid"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Process"/>
+        <DataProperty IRI="#chgSUid"/>
+        <Class IRI="#Process"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#chgUid"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Process"/>
+        <DataProperty IRI="#chgUid"/>
+        <Class IRI="#Process"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#commonConsequences"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Weakness"/>
+        <DataProperty IRI="#commonConsequences"/>
+        <Class IRI="#Weakness"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#cveID"/>
+        <DataProperty IRI="#cveID"/>
         <ObjectUnionOf>
-            <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Vulnerability"/>
-            <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#WebText"/>
+            <Class IRI="#Vulnerability"/>
+            <Class IRI="#WebText"/>
         </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#cweID"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Weakness"/>
+        <DataProperty IRI="#cweID"/>
+        <Class IRI="#Weakness"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#dataSize"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Process"/>
+        <DataProperty IRI="#dataSize"/>
+        <Class IRI="#Process"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#description"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Weakness"/>
+        <DataProperty IRI="#description"/>
+        <Class IRI="#Weakness"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#generated-on-datetime"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Vulnerability"/>
+        <DataProperty IRI="#generated-on-datetime"/>
+        <Class IRI="#Vulnerability"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasAccessComplexity"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Vulnerability"/>
+        <DataProperty IRI="#hasAccessComplexity"/>
+        <Class IRI="#Vulnerability"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasAccessVector"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Vulnerability"/>
+        <DataProperty IRI="#hasAccessVector"/>
+        <Class IRI="#Vulnerability"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasAuthentication"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Vulnerability"/>
+        <DataProperty IRI="#hasAuthentication"/>
+        <Class IRI="#Vulnerability"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasAvailabilityImpact"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Vulnerability"/>
+        <DataProperty IRI="#hasAvailabilityImpact"/>
+        <Class IRI="#Vulnerability"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasBeenSeenBefore"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Hardware"/>
+        <DataProperty IRI="#hasBeenSeenBefore"/>
+        <Class IRI="#Hardware"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasCodeSize"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Process"/>
+        <DataProperty IRI="#hasCodeSize"/>
+        <Class IRI="#Process"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasConfidentialityImpact"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Vulnerability"/>
+        <DataProperty IRI="#hasConfidentialityImpact"/>
+        <Class IRI="#Vulnerability"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasDataSize"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Process"/>
+        <DataProperty IRI="#hasDataSize"/>
+        <Class IRI="#Process"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasIPAddress"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#System"/>
+        <DataProperty IRI="#hasIPAddress"/>
+        <Class IRI="#System"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasInstalledProduct"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#System"/>
+        <DataProperty IRI="#hasInstalledProduct"/>
+        <Class IRI="#System"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasIntegrityImpact"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Vulnerability"/>
+        <DataProperty IRI="#hasIntegrityImpact"/>
+        <Class IRI="#Vulnerability"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasLibSize"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Process"/>
+        <DataProperty IRI="#hasLibSize"/>
+        <Class IRI="#Process"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasMACAddress"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#System"/>
+        <DataProperty IRI="#hasMACAddress"/>
+        <Class IRI="#System"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasProcessName"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Process"/>
+        <DataProperty IRI="#hasProcessName"/>
+        <Class IRI="#Process"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasReference"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#VulnerabilitySource"/>
+        <DataProperty IRI="#hasReference"/>
+        <Class IRI="#VulnerabilitySource"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasReferenceType"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#VulnerabilitySource"/>
+        <DataProperty IRI="#hasReferenceType"/>
+        <Class IRI="#VulnerabilitySource"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasSecurityExploit"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#WebText"/>
+        <DataProperty IRI="#hasSecurityExploit"/>
+        <Class IRI="#WebText"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasSource"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Vulnerability"/>
+        <DataProperty IRI="#hasSource"/>
+        <Class IRI="#Vulnerability"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasSourceID"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#VulnerabilitySource"/>
+        <DataProperty IRI="#hasSourceID"/>
+        <Class IRI="#VulnerabilitySource"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasVulnerabilityTerm"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#WebText"/>
+        <DataProperty IRI="#hasVulnerabilityTerm"/>
+        <Class IRI="#WebText"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#isNew"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Hardware"/>
+        <DataProperty IRI="#isNew"/>
+        <Class IRI="#Hardware"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#isNew"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#KernelModule"/>
+        <DataProperty IRI="#isNew"/>
+        <Class IRI="#KernelModule"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#lastModifiedDateTime"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Vulnerability"/>
+        <DataProperty IRI="#lastModifiedDateTime"/>
+        <Class IRI="#Vulnerability"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#newDestIP"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#NetworkDataUsage"/>
+        <DataProperty IRI="#newDestIP"/>
+        <Class IRI="#NetworkDataUsage"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#newPortsOpened"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#NetworkDataUsage"/>
+        <DataProperty IRI="#newPortsOpened"/>
+        <Class IRI="#NetworkDataUsage"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#numChildProcesses"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Process"/>
+        <DataProperty IRI="#numChildProcesses"/>
+        <Class IRI="#Process"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#numOpenFiles"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Process"/>
+        <DataProperty IRI="#numOpenFiles"/>
+        <Class IRI="#Process"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#numProcessesRunning"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#System"/>
+        <DataProperty IRI="#numProcessesRunning"/>
+        <Class IRI="#System"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#opensPort"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Process"/>
+        <DataProperty IRI="#opensPort"/>
+        <Class IRI="#Process"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#potentialMitigations"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Weakness"/>
+        <DataProperty IRI="#potentialMitigations"/>
+        <Class IRI="#Weakness"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#publishedDateTime"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Vulnerability"/>
+        <DataProperty IRI="#publishedDateTime"/>
+        <Class IRI="#Vulnerability"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#score"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Vulnerability"/>
+        <DataProperty IRI="#score"/>
+        <Class IRI="#Vulnerability"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#selfDist"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Process"/>
+        <DataProperty IRI="#selfDist"/>
+        <Class IRI="#Process"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#showsInfectionSigns"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Process"/>
+        <DataProperty IRI="#showsInfectionSigns"/>
+        <Class IRI="#Process"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#summary"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Vulnerability"/>
+        <DataProperty IRI="#summary"/>
+        <Class IRI="#Vulnerability"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#timeOfIntroduction"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#Weakness"/>
+        <DataProperty IRI="#timeOfIntroduction"/>
+        <Class IRI="#Weakness"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#vulnSource"/>
-        <Class IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#VulnerabilitySource"/>
+        <DataProperty IRI="#vulnSource"/>
+        <Class IRI="#VulnerabilitySource"/>
     </DataPropertyDomain>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#anomolousDataOutFlow"/>
+        <DataProperty IRI="#anomolousDataOutFlow"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#chgGid"/>
+        <DataProperty IRI="#chgGid"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#chgPPid"/>
+        <DataProperty IRI="#chgPPid"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#chgSUid"/>
+        <DataProperty IRI="#chgSUid"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#chgUid"/>
+        <DataProperty IRI="#chgUid"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#dataSize"/>
+        <DataProperty IRI="#dataSize"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#description"/>
+        <DataProperty IRI="#description"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasAccessComplexity"/>
+        <DataProperty IRI="#hasAccessComplexity"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasAccessVector"/>
+        <DataProperty IRI="#hasAccessVector"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasBeenSeenBefore"/>
+        <DataProperty IRI="#hasBeenSeenBefore"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasCodeSize"/>
+        <DataProperty IRI="#hasCodeSize"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasDataSize"/>
+        <DataProperty IRI="#hasDataSize"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasIPAddress"/>
+        <DataProperty IRI="#hasIPAddress"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasInstalledProduct"/>
+        <DataProperty IRI="#hasInstalledProduct"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasLibSize"/>
+        <DataProperty IRI="#hasLibSize"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasMACAddress"/>
+        <DataProperty IRI="#hasMACAddress"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasProcessName"/>
+        <DataProperty IRI="#hasProcessName"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasReference"/>
+        <DataProperty IRI="#hasReference"/>
         <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasSecurityExploit"/>
+        <DataProperty IRI="#hasSecurityExploit"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasSourceID"/>
+        <DataProperty IRI="#hasSourceID"/>
         <Datatype abbreviatedIRI="xsd:long"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#hasVulnerabilityTerm"/>
+        <DataProperty IRI="#hasVulnerabilityTerm"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#isNew"/>
+        <DataProperty IRI="#isNew"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#lastModifiedDateTime"/>
+        <DataProperty IRI="#lastModifiedDateTime"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#newDestIP"/>
+        <DataProperty IRI="#newDestIP"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#newPortsOpened"/>
+        <DataProperty IRI="#newPortsOpened"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#numChildProcesses"/>
+        <DataProperty IRI="#numChildProcesses"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#numOpenFiles"/>
+        <DataProperty IRI="#numOpenFiles"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#numProcessesRunning"/>
+        <DataProperty IRI="#numProcessesRunning"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#opensPort"/>
+        <DataProperty IRI="#opensPort"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#potentialMitigations"/>
+        <DataProperty IRI="#potentialMitigations"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#publishedDateTime"/>
+        <DataProperty IRI="#publishedDateTime"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#score"/>
+        <DataProperty IRI="#score"/>
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#selfDist"/>
+        <DataProperty IRI="#selfDist"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#showsInfectionSigns"/>
+        <DataProperty IRI="#showsInfectionSigns"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#summary"/>
+        <DataProperty IRI="#summary"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#timeOfIntroduction"/>
+        <DataProperty IRI="#timeOfIntroduction"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="http://ebiquity.umbc.edu/ontologies/2013/4/IDSOntology.owl#vulnSource"/>
+        <DataProperty IRI="#vulnSource"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#BotnetAttack</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/resource/Botnet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#BoundaryCondition</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/resource/Off-by-one_error</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#BufferOverFlow</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/resource/Buffer_overflow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#DenialOfService</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/resource/Denial-of-service_attack</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#ExceptionCondition</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/resource/Exception_handling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#FileName</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/resource/Filename</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Hardware</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/resource/Computer_hardware</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#IPAddress</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/resource/IP_address</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#IPFrag</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/resource/IP_fragmentation_attacks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#KernelModule</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/resource/Loadable_kernel_module</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#MalformedInput</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://sw.opencyc.org/concept/Mx4rwQShKJwpEbGdrcN5Y29ycA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#MaliciousCodeExecution</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/resource/Arbitrary_code_execution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#MitnickAttack</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/resource/The_Art_of_Intrusion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#NetFlood</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/describe/?url=http%3A%2F%2Fsw.opencyc.org%2F2008%2F06%2F10%2Fconcept%2Fen%2FTribeFloodNet_DenialOfServiceProgram&amp;sid=7707</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#OperatingSystem</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/ontology/operatingSystem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#PingOfDeath</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/resource/Ping_of_death</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Process</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/resource/Category:Process_(computing)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#RaceCondition</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/resource/Race_condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#RemoteAccess</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Remote_Access_Trojans_(RATs)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Rootkit</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/resource/Rootkit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Software</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/ontology/Software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#SysCrash</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/resource/Fatal_system_error</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#System</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/resource/Computer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Virus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/resource/Computer_virus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Vulnerability</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/resource/Vulnerability_(computing)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#VulnerabilitySource</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/resource/Webtext</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#WebBrowser</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/class/yago/WebBrowser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#WebText</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/resource/Webtext</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Worm</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://dbpedia.org/resource/Computer_worm</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
 
-<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
 
