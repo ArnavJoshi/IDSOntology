@@ -275,7 +275,16 @@
         <DataProperty IRI="#cveID"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#cweExtendedSummary"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#cweID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cweName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cweSummary"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#dataSize"/>
